@@ -1,0 +1,52 @@
+{
+  "name": "js-date-constants",
+  "version": "1.0.0",
+  "description": "Date constants.",
+  "keywords": [
+    "date",
+    "constants",
+    "max",
+    "min"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaredhanson/js-date-constants.git"
+  },
+  "bugs": {
+    "url": "http://github.com/jaredhanson/js-date-constants/issues"
+  },
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./index",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "1.x.x",
+    "chai": "1.x.x"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  },
+  "testling": {
+    "browsers": [
+      "chrome/latest"
+    ],
+    "harness" : "mocha",
+    "files": [
+      "test/bootstrap/testling.js",
+      "test/*.test.js"
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+exports.MAX_DATE = new Date(8640000000000000);
+exports.MIN_DATE = new Date(-8640000000000000);
